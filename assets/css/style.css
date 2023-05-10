@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
+
+
+:root{
+    --background-body: #c77dff;
+    --background-nav: #9d4edd;
+    --background-footer: #240046;
+    --sombra: #f4f3ee;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   --sombra: #f4f3ee;
+
+}
+
+p{
+    font-family: 'lato', Roboto;
+    margin-bottom: 1.5rem;
+    color: #f4f3ee;
+    --sombra: #f4f3ee;
+
+}
+
+h1,
+h2,
+h3,
+a{
+    font-family: 'lato', cursive;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: var(--background-footer);
+}
+
+h1{
+    font-size: 1.25rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+
+}
+
+h2{
+    font-size: 2rem;
+   
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+h2,
+h3{
+    text-align: center;
+}
+
+body{
+    background-color: var(--background-body);
+
+}
+
+nav{
+    margin: 0 auto;
+    width: 80vw;
+    background-color: var(--background-nav);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 2.25rem 1.5rem;
+    box-shadow: 2px 2px 5px var(--sombra);
+    border-radius: 16px;
+
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: left;
+    position: relative;
+    align-items: center;
+}
+
+.icone{
+    width: 5rem;
+    padding-left: 1 rem;
+
+}
+
+.titulo{
+    font-family: 'lato', cursive;
+    color: #000814;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+    padding-left: 2rem;
+    --sombra: #3c096c;
+
+}
+
+ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 24px;
+    color: white;
+    --sombra: #3c096c;
+}
+
+nav a{
+    color: white;
+    --sombra: #3c096c;
+
+}
+
+main{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #9d4edd;
+    border-radius: 16px;
+    gap: 1.25rem;
+    border-radius: 1rem;
+    --sombra: #3c096c;
+
+}
+
+#section-video{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.foto{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--sombra);
+
+}
+
+footer{
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--background-footer);
+    
+}
+
+/*Estilizar o Formulário*/
+
+hr{
+    margin: 1rem;
+}
+
+label{
+    font-family: 'lato', Roboto;
+    color: black;
+    font-size: 1.25rem;
+    --sombra: #3c096c;
+}
+
+input,
+textarea,
+button{
+    font-family: 'lato', Roboto;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: #000000;
+    --sombra: #3c096c;
+
+}
+
+button{
+    font-family: 'lato', Roboto;
+    background-color: var(--background-nav);
+    font-weight: 800;
+    color: white;
+    --sombra: #3c096c;
+}
+
+button:hover{
+    background-color: navy;
+    --sombra: #f4f3ee;
+}
+
+input,
+textarea::placeholder{
+    color: var(--background-nav);
+
+}
+
+.imagem-footer {
+    width: 3%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.foto {
+    width: 20vw;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 5rem;
+}
+
+.campos-form {
+    padding-bottom: 1rem;
+}
