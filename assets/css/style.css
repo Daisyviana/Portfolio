@@ -1,224 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* Variáveis */
+:root {
+    /* Paleta de Cores */
+    --cor1: #FCD6F9;
+    --cor2: #FFC6FE;
+    --cor3: #F6B2FF;
+    --cor4: #CEAFFF;
+    --cor5: #C19BFF;
 
-:root{
-    --background-body: #c77dff;
-    --background-nav: #9d4edd;
-    --background-footer: #240046;
-    --sombra: #f4f3ee;
+    /* Fontes */
+    --fonte-cursive: "lato", cursive;
+    --fonte-normal: "lato", Roboto;
+
+    /* Cores especiais */
+    --sombra: #4c0066;
+    --fonte-escura: black;
+    --fonte-clara: white;
 }
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   --sombra: #f4f3ee;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p{
-    font-family: 'lato', Roboto;
-    margin-bottom: 1.5rem;
-    color: #f4f3ee;
-    --sombra: #f4f3ee;
-
+body {
+    background-color: var(--cor1);
 }
 
-h1,
-h2,
-h3,
-a{
-    font-family: 'lato', cursive;
-    letter-spacing: 3px;
-    font-weight: 800;
-    color: var(--background-footer);
-}
-
-h1{
-    font-size: 1.25rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: left;
-
-}
-
-h2{
-    font-size: 2rem;
-   
-}
-
-h3{
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-
-}
-
-a{
-    text-decoration: none;
-}
-
-h2,
-h3{
-    text-align: center;
-}
-
-body{
-    background-color: var(--background-body);
-
-}
-
-nav{
+nav {
     margin: 0 auto;
-    width: 80vw;
-    background-color: var(--background-nav);
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
-    padding: 2.25rem 1.5rem;
-    box-shadow: 2px 2px 5px var(--sombra);
-    border-radius: 16px;
-
-}
-
-.logo{
-    display: flex;
-    width: 20%;
-    justify-content: left;
-    position: relative;
-    align-items: center;
-}
-
-.icone{
-    width: 5rem;
-    padding-left: 1 rem;
-
-}
-
-.titulo{
-    font-family: 'lato', cursive;
-    color: #000814;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    font-weight: 800;
-    padding-left: 2rem;
-    --sombra: #3c096c;
-
-}
-
-ul{
-    list-style: none;
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-    font-size: 24px;
-    color: white;
-    --sombra: #3c096c;
-}
-
-nav a{
-    color: white;
-    --sombra: #3c096c;
-
-}
-
-main{
     width: 80vw;
-    margin: 0 auto;
+    padding: 2.25rem 1.5rem;
+
+    font-size: 1.5rem;
+    background-color: var(--cor5);
+    box-shadow: 2px 2px 5px var(--sombra);
 }
 
-#sobre{
+main {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80vw;
+    text-align: center;
+
+    background-color: var(--cor5);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#sobre {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: #9d4edd;
-    border-radius: 16px;
-    gap: 1.25rem;
+    padding: 1.25rem;
     border-radius: 1rem;
-    --sombra: #3c096c;
+    gap: 1.25rem;
 
+    background-color: var(--cor4);
 }
 
-#section-video{
-
+#section-video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 2rem;
-    width: 100%;
 }
 
-.foto{
-    width: 200px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px var(--sombra);
-
+#txtNome, #txtEmail, #txtMensagem, #txtCep, #txtEndereco {
+    font-family: var(--fonte-cursive);
 }
 
-footer{
-    width: 80vw;
-    margin: 0 auto;
-    margin-top: 5rem;
-    text-align: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    background-color: var(--background-footer);
-    
-}
-
-/*Estilizar o Formulário*/
-
-hr{
-    margin: 1rem;
-}
-
-label{
-    font-family: 'lato', Roboto;
-    color: black;
-    font-size: 1.25rem;
-    --sombra: #3c096c;
-}
-
-input,
-textarea,
-button{
-    font-family: 'lato', Roboto;
-    width: 100%;
-    margin-top: 0.25rem;
-    padding: 0.5rem;
-    border-radius: 8px;
-    font-size: 1.25rem;
-    color: #000000;
-    --sombra: #3c096c;
-
-}
-
-button{
-    font-family: 'lato', Roboto;
-    background-color: var(--background-nav);
-    font-weight: 800;
-    color: white;
-    --sombra: #3c096c;
-}
-
-button:hover{
-    background-color: navy;
-    --sombra: #f4f3ee;
-}
-
-input,
-textarea::placeholder{
-    color: var(--background-nav);
-
-}
-
-.imagem-footer {
-    width: 3%;
-    padding-top: 1rem;
+#texto-footer {
     padding-bottom: 1rem;
+
+    color: var(--fonte-clara);
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    align-items: center;
+    width: 20vw;
+}
+
+.icone {
+    width: 5rem;
+    padding-left: 1rem;
+}
+
+.titulo {
+    padding-left: 2rem;
+
+    font-family: var(--fonte-cursive);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--fonte-clara);
+    letter-spacing: 0.075rem;
 }
 
 .foto {
     width: 20vw;
+
     border-radius: 1.25rem;
     box-shadow: 2px 2px 5px var(--sombra);
 }
@@ -232,4 +124,102 @@ textarea::placeholder{
 
 .campos-form {
     padding-bottom: 1rem;
+}
+
+.imagem-footer {
+    width: 3%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+
+    font-family: var(--fonte-normal);
+    color: var(--fonte-escura);
+}
+
+h1, h2, h3, a {
+    font-family: var(--fonte-cursive);
+    font-weight: 600;
+    color: var(--fonte-escura);
+    letter-spacing: 0.075rem;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    margin-bottom: 2rem;
+
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--fonte-clara);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+
+    font-size: 1.5rem;
+}
+
+label {
+    font-family: var(--fonte-cursive);
+    font-size: 1.25rem;
+}
+
+input, textarea, button {
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    
+    border-radius: 0.75rem;
+    font-family: var(--fonte-cursive);
+    font-size: 1rem;
+    color: var(--fonte-escura);
+    border: 1px solid var(--cor5);
+}
+
+button {
+    background-color: var(--cor4);
+    color: var(--fonte-clara);
+}
+
+hr {
+    margin: 2rem;
+}
+
+button:hover {
+    background-color: var(--cor5);
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    border: 2px solid var(--cor5);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--cor5);
 }
